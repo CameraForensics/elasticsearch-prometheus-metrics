@@ -34,11 +34,11 @@ if (!project.hasProperty('skipEsPlugin')) {
       version generatedVersion
   }
 
-  configurations.whenObjectAdded { c ->
-    if (c.name == 'elasticsearch_7.5.0_integ_test_zip_null') {
-      project.dependencies.add('elasticsearch_7.5.0_integ_test_zip_null', 'org.elasticsearch.distribution.integ-test-zip:elasticsearch:7.5.0@zip')
-    }
-  }
+//  configurations.whenObjectAdded { c ->
+//    if (c.name == 'elasticsearch_7.9.0_integ_test_zip_null') {
+//      project.dependencies.add('elasticsearch_7.9.0_integ_test_zip_null', 'org.elasticsearch.distribution.integ-test-zip:elasticsearch:7.9.0@zip')
+//    }
+//  }
 
   ext.projectSubstitutions = [:]
 }

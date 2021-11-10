@@ -28,6 +28,11 @@ jobs:
     - stage: build
       jdk: openjdk13
       env:
+        - ES=7.9.0
+      script: *script
+    - stage: build
+      jdk: openjdk13
+      env:
         - ES=7.4.2
       script: *script
     - stage: build
